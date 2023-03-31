@@ -1,0 +1,47 @@
+{
+  "name": "DEMO 1",
+  "description": "IT_HELP WELCOME DEMO ",
+  "version": "1",
+  "manifest_version": 3,
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "cookies"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "/popup/popup.html",
+    "default_title": "IT_HELP 2022 DEMO WITH WINNIE",
+    "default_icon": {
+      "16": "logo_128x128.png",
+      "24": "logo_128x128.png",
+      "32": "logo_128x128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://ithelp.ithome.com.tw/users/20139636"
+      ],
+      "js": [
+        "/content_script/content.js"
+      ],
+      "css":[
+        "/style/content.css"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "logo_128x128.png",
+    "48": "logo_128x128.png",
+    "128": "logo_128x128.png"
+  }
+}

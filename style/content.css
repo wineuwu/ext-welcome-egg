@@ -1,0 +1,390 @@
+.ext_container{
+  width: 100vw;
+  min-height: 100%;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right:0;
+  left:0;
+  margin: auto;
+  text-align: center;
+  z-index: 100000;
+  /* background-color: #b1b1b180; */
+}
+
+.w_egg{
+  width: 200px;
+  height: 250px;
+  transition: .5s;
+  position: fixed;
+  top: 0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin: auto;
+}
+
+.w_egg:hover{
+  transform: scale(1.05);
+}
+
+.w_close_btn:hover::after {
+  content:"點擊工具列Icon視窗內按鈕，即可重新打開";
+  width: 280px;
+  font-size: 13px;
+  background: #393939B3;
+  border-radius: 4px;
+  color:white;
+  position: fixed;
+  left: 57%;
+  top: 27%;
+}
+
+.w_close_btn{
+  cursor: pointer;
+  left: 60%;
+  top: 20%;
+  position: fixed;
+  z-index: 100000;
+  width: 35px;
+  text-align: center;
+  background: #0000004D;
+   border-radius: 100%;
+  color: white;
+  line-height: 35px;
+}
+
+.egg_item{
+  width: 200px;
+  height: 250px;
+  background:transparent;
+  position: relative;
+  background-color: #393939; 
+  box-shadow: .1px 0px .5px .5px #cdcdcd ;
+  overflow: hidden; 
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  transition: .5s; 
+  animation: shakeing 1.5s infinite;
+}
+
+
+.w_chicken{
+  display: none;
+  position: absolute;
+  left: 0;
+  right:0;
+  bottom: -1.5px;
+  margin: auto;
+  width:150px;
+  height: 150px;
+  animation: showup 1s;
+}
+
+img{
+  width: 100%;
+}
+.w_tag{
+  height: 60px;
+  text-align: center;
+  color:#e1e1e14D;
+  position: absolute;
+  font-weight: 700;
+  line-height: 60px;
+  top:20px;
+  left:0;
+  right:0;
+  bottom: 0;
+  margin: auto;
+  font-size: 16px;
+  cursor: pointer;
+  transition:  .5s;
+}
+
+.w_tag_name{
+  display: none;
+  text-align: center;
+  line-height: 250px;
+  color:white;
+  position: absolute;
+  font-weight: 700;
+  bottom: 0;
+  left:0;
+  right:0;
+  margin: auto;
+  font-size: 16px;
+  cursor: pointer;
+  transition:  .5s;
+}
+div.item{
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  left: 0px;
+  top:0px;
+}
+.clip3{
+  clip-path: polygon(0 0, 0 15%, 14% 0);
+  background-color: #fbfbfb;
+}
+.clip4{
+  clip-path: polygon(29% 11%, 0 15%, 14% 0);
+  background-color: #cdcccc;
+}
+.clip5{
+  clip-path: polygon(29% 11%, 46% 0, 14% 0);
+  background-color: #e5e4e4;
+}
+
+.clip6{
+  top:0;
+  left:0;
+  clip-path: polygon(46% 0, 29% 11%, 44% 18%);
+  background-color: #f4f3f3;
+}
+.clip7{
+  top:0;
+  left:0;
+  clip-path: polygon(46% 0, 73% 0, 74% 16%);
+  background-color: #d8d7d7;
+}
+
+.clip8{
+  top:0;
+  left:0;
+  clip-path: polygon(0 15%, 29% 11%, 44% 18%);
+  background-color: #d3d3d3;
+}
+
+.clip9{
+  top:0;
+  left:0;
+  clip-path: polygon(46% 0%, 44% 18%, 74% 16%);
+  background-color: #f9f8f8;
+}
+
+.clip10{
+  top:0;
+  left:0;
+  clip-path: polygon(100% 11%, 73% 0, 74% 16%);
+  background-color: #b9b9b9;
+}
+
+.clip11{
+  top:0;
+  left:0;
+  clip-path: polygon(100% 0, 100% 14%, 65% 0);
+  background-color: #fdfdfd;
+}
+
+.clip12{
+  top:0;
+  left:0;
+  clip-path: polygon(100% 0, 84% 14%, 100% 16%);
+  background-color: #e0e0e0;
+}
+.clip13{
+  top:0;
+  left:0;
+  clip-path: polygon(0 15%, 15% 32%, 23% 30%);
+  background-color: #b3b3b3;
+}
+.clip14{
+  top:0;
+  left:0;
+  clip-path: polygon(0 15%, 4% 25%, 15% 30%);
+  background-color: #adadad;
+}
+.clip15{
+  top:0;
+  left:0;
+  clip-path: polygon(30% 17%, 44% 18%, 23% 30%);
+  background-color: #ffffff;
+}
+
+.clip16{
+  top:0;
+  left:0;
+  clip-path: polygon(0 15%, 30% 17%, 23% 30%);
+  background-color: #f1f1f1;
+}
+
+.clip17{
+  top:0;
+  left:0;
+  clip-path: polygon(74% 16%, 84% 14%, 100% 40%);
+  background-color: #bfbfbf;
+}
+
+.clip18{
+  top:0;
+  left:0;
+  clip-path: polygon(84% 14%, 100% 15%, 100% 40%);
+  background-color: #fafafa;
+}
+.clip19{
+  top:0;
+  left:0;
+  clip-path: polygon(44% 18%, 55% 23%, 40% 45%);
+  background-color: #fcfcfc;
+}
+.clip20{
+  top:0;
+  left:0;
+  clip-path: polygon(44% 18%, 57% 17%, 55% 23%);
+  background-color: #dadada;
+}
+.clip21{
+  top:0;
+  left:0;
+  clip-path: polygon(57% 17%, 55% 23%, 70% 24%);
+  background-color: #fdfbfb;
+  
+}
+
+.clip23{
+  top:0;
+  left:0;
+  clip-path: polygon(57% 17%, 74% 16% ,70% 24%);
+  background-color: #ececec;
+}
+
+/* 到這 */
+.clip24{
+  top:0;
+  left:0;
+  clip-path: polygon(44% 18%, 23% 30%, 40% 45%);
+  background-color: #dedede;
+}
+.clip25{
+  top:0;
+  left:0;
+  clip-path: polygon(16% 66%, 0 100%, 22% 91%);
+  background-color: #dedede;
+}
+.clip26{
+  top:0;
+  left:0;
+  clip-path: polygon(88% 100%, 85% 82%, 80% 90%);
+  background-color: #b3b3b3;
+}
+.clip27{
+  top:0;
+  left:0;
+  clip-path: polygon(85% 82%, 100% 70%, 100% 88%);
+  background-color: #ffffff;
+}
+.clip28{
+  top:0;
+  left:0;
+  clip-path: polygon(85% 82%, 88% 100%, 100% 88%);
+  background-color: #d8d8d8;
+}
+
+.clip29{
+  top:0;
+  left:0;
+  clip-path: polygon(100% 100%, 88% 100%, 100% 88%);
+  background-color: #c2c2c2;
+}
+.clip31{
+  top:0;
+  left:0;
+  clip-path: polygon(74% 16%, 84% 14%, 100% 40%);
+  clip-path: polygon(74% 16%, 70% 24%, 100% 40%);
+  background-color: #fafafa;
+}
+.clip32{
+  top:0;
+  left:0;
+  clip-path: polygon(0% 100%, 22% 91%, 30% 100%);
+  background-color: #c6c6c6;
+}
+.clip33{
+  top:0;
+  left:0;
+  clip-path: polygon(16% 66%, 0 100%, 0 48%);
+  background-color: #fafafa;
+}
+.clip34{
+  top:0;
+  left:0;
+  clip-path: polygon(60% 100%, 80% 90%, 88% 100%);
+  background-color: #fafafa;
+}
+.clip35{
+  top:0;
+  left:0;
+  clip-path: polygon(40% 45%, 50% 30%, 66% 50%);
+  background-color: #c2c0c0;
+}
+.clip36{
+  top:0;
+  left:0;
+  clip-path: polygon(0% 48%, 16% 66%, 40% 45%);
+  background-color: #e9e9e9;
+}
+.clip37{
+  top:0;
+  left:0;
+  clip-path: polygon(50% 30%, 55% 23%, 70% 24%);
+  background-color: #e9e9e9;
+}
+
+.clip38{
+  top:0;
+  left:0;
+  clip-path: polygon(50% 30%, 44% 18%, 55% 23%);
+  background-color: #a3a2a2;
+}
+
+.clip39{
+  top:0;
+  left:0;
+  clip-path: polygon(50% 30%, 44% 18%, 55% 23%);
+  background-color: #a6a5a5;
+}
+
+.clip40{
+  top:0;
+  left:0;
+  clip-path: polygon(50% 30%, 70% 24%, 66% 50%);
+  background-color: #f3f2f2;
+}
+.clip41{
+  top:0;
+  left:0;
+  clip-path: polygon(70% 24%, 66% 50%, 100% 40%);
+  background-color: #f3f2f2;
+}
+
+.clip42{
+  top:0;
+  left:0;
+  clip-path: polygon(70% 24%, 66% 50%, 100% 40%);
+  background-color: #f3f2f2;
+}
+
+
+@keyframes shakeing {
+  0%{
+    transform: translateY(10px);
+  }
+  50%{
+    
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(10px);
+  }
+}
+
+@keyframes showup {
+  0%{
+    bottom: -50px;
+  }
+
+  100%{
+    bottom: -1.5px;
+  }
+}
+
