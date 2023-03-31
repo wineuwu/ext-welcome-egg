@@ -1,5 +1,5 @@
 {
-  "name": "DEMO 1",
+  "name": "IT_HELP WELCOME DEMO",
   "description": "IT_HELP WELCOME DEMO ",
   "version": "1",
   "manifest_version": 3,
@@ -15,7 +15,7 @@
   ],
   "action": {
     "default_popup": "/popup/popup.html",
-    "default_title": "IT_HELP 2022 DEMO WITH WINNIE",
+    "default_title": "IT_HELP WELCOME DEMO",
     "default_icon": {
       "16": "logo_128x128.png",
       "24": "logo_128x128.png",
@@ -34,7 +34,7 @@
       "js": [
         "/content_script/content.js"
       ],
-      "css":[
+      "css": [
         "/style/content.css"
       ]
     }
